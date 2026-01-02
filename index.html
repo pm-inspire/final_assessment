@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Exam - Primary 2 - December 2025</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Segoe UI', sans-serif;
+            background: white;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .exam-container {
+            border: 4px solid #2c3e50;
+            padding: 30px;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            direction: ltr;
+        }
+
+        .header-left {
+            text-align: left;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .header-right {
+            text-align: right;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .exam-title {
+            color: #e74c3c;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 15px 0;
+            direction: rtl;
+        }
+
+        .student-info {
+            margin: 20px 0;
+            direction: rtl;
+        }
+
+        .info-line {
+            border-bottom: 1px solid #333;
+            display: inline-block;
+            min-width: 300px;
+            margin: 0 5px;
+        }
+
+        .question-section {
+            margin: 25px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .question-header {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .marks {
+            float: right;
+            background: #3498db;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+
+        .question-content {
+            margin-top: 10px;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .word-item {
+            display: inline-block;
+            margin: 15px 30px 15px 0;
+            text-align: center;
+        }
+
+        .word-icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .word-text {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .mcq-item {
+            margin: 15px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .choice {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .match-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 15px 0;
+        }
+
+        .match-item {
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #ddd;
+        }
+
+        .match-icon {
+            font-size: 60px;
+            margin: 10px 0;
+        }
+
+        .match-label {
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .sentence-box {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .sentence-text {
+            color: #3498db;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .write-line {
+            border-bottom: 2px solid #333;
+            margin: 10px auto;
+            width: 80%;
+            height: 30px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 2px solid #e74c3c;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .total-marks {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .good-luck {
+            font-size: 20px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .bottom-info {
+            direction: rtl;
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background: #ecf0f1;
+            border-radius: 8px;
+            border: 2px solid #95a5a6;
+        }
+
+        .score-box {
+            display: inline-block;
+            border: 2px solid #2c3e50;
+            padding: 8px 15px;
+            border-radius: 8px;
+            margin: 0 10px;
+            background: white;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .exam-container {
+                border: 3px solid #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="exam-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-row">
+                <div class="header-left">
+                    <div>Aswan Governorate</div>
+                    <div>Primary 2</div>
+                </div>
+                <div class="header-right">
+                    <div>إدارة أسوان التعليمية</div>
+                    <div>توجيه اللغة الانجليزية</div>
+                </div>
+            </div>
+
+            <div class="exam-title">
+                التقييم النهائي للصف الثاني الابتدائي ديسمبر 2025
+            </div>
+        </div>
+
+        <!-- Student Info -->
+        <div class="student-info">
+            <strong>الاسم:</strong> <span class="info-line"></span>
+            <strong>الفصل:</strong> <span class="info-line" style="min-width: 150px;"></span>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="question-section">
+            <div class="question-header">
+                1- Look and Write the missing letter :
+                <span class="marks">(3 Mark)</span>
+            </div>
+            <div class="question-content">
+                <div class="word-item">
+                    <div class="word-icon">🖊️</div>
+                    <div class="word-text">p __ n</div>
+                </div>
+
+                <div class="word-item">
+                    <div class="word-icon">🌹</div>
+                    <div class="word-text">r __ se</div>
+                </div>
+
+                <div class="word-item">
+                    <div class="word-icon">⛵</div>
+                    <div class="word-text">__ hip</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-section">
+            <div class="question-header">
+                2- Read and choose the correct answer :
+                <span class="marks">(3 Mark)</span>
+            </div>
+            <div class="question-content">
+                <div class="mcq-item">
+                    <strong>1-</strong> I <span class="choice">(read - play)</span> a book. 📖
+                </div>
+
+                <div class="mcq-item">
+                    <strong>2-</strong> The lamp is <span class="choice">(under - on)</span> the table. 💡
+                </div>
+
+                <div class="mcq-item">
+                    <strong>3-</strong> I have <span class="choice">(one - three)</span> book. 📚
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-section">
+            <div class="question-header">
+                3- Look, Read and match:
+                <span class="marks">(3 Mark)</span>
+            </div>
+            <div class="question-content">
+                <div style="margin-bottom: 15px;">
+                    <strong>1- Square</strong><br>
+                    <strong>2- Mother</strong><br>
+                    <strong>3- Desk</strong>
+                </div>
+
+                <div class="match-container">
+                    <div class="match-item">
+                        <div class="match-icon">👩‍👧</div>
+                        <div class="match-label">A</div>
+                    </div>
+
+                    <div class="match-item">
+                        <div class="match-icon">🪑</div>
+                        <div class="match-label">B</div>
+                    </div>
+
+                    <div class="match-item">
+                        <div class="match-icon" style="background: #3498db; color: white; padding: 20px; border-radius: 5px;">◼️</div>
+                        <div class="match-label">C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-section">
+            <div class="question-header">
+                4- Copy this Sentence :
+                <span class="marks">(1 Mark)</span>
+            </div>
+            <div class="question-content">
+                <div class="sentence-box">
+                    <div class="sentence-text">There is a kitchen.</div>
+                    <div class="write-line"></div>
+                    <div class="write-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="total-marks">Total: 10 Marks</div>
+            <div class="good-luck">Good Luck! ⭐</div>
+        </div>
+
+        <!-- Bottom Info Box -->
+        <div class="bottom-info">
+            <strong>الاسم:</strong> <span class="info-line"></span>
+            <strong>الفصل:</strong> <span class="info-line" style="min-width: 100px;"></span>
+            <span class="score-box">
+                الدرجة: <strong>8</strong>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

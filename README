@@ -1,1 +1,9 @@
-README
+Primary 2 English Exam (Dec 2025)
+
+Files:
+- index.html: Printable A4 exam layout (Arabic RTL + English LTR mix).
+
+How to use:
+- Open `index.html` in any browser.
+- Print: use the browser print dialog and select A4.
+- Export to PDF: choose "Save to PDF" in the print dialog.
