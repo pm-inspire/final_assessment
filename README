@@ -1,1 +1,16 @@
-README
+Primary 2 English Exam (December 2025)
+=====================================
+
+Files
+-----
+
+- `primary2-english-exam-dec-2025.html`: Ready-to-print A4 exam template (Arabic RTL header + English questions).
+
+How to use
+----------
+
+1. Open `primary2-english-exam-dec-2025.html` in a browser.
+2. Print:
+   - Paper size: **A4**
+   - Margins: **Default** (the file sets `@page` margins)
+   - Background graphics/colors: **On** (recommended to preserve styling)
